@@ -9,7 +9,7 @@ Summary:        MongoDB performance tuning tool
 Group:          Applications/Databases
 License:        MIT
 URL:            https://github.com/mongolab/dex
-Source0:        https://github.com/mongolab/dex/archive/%{version}.tar.gz
+Source0:        https://github.com/mongolab/dex/archive/%{name}-%{version}.tar.gz
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
