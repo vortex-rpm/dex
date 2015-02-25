@@ -23,7 +23,7 @@ simple heuristics. Currently you must provide a connection URI for your database
 
 %install
 rm -rf %{buildroot}
-%{__python} setup.py install -O1 --skip-build --root %{buildroot}
+%{__python} setup.py install --root %{buildroot}
 
 %clean
 rm -rf %{buildroot}
