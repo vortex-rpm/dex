@@ -23,7 +23,8 @@ simple heuristics. Currently you must provide a connection URI for your database
 
 %install
 rm -rf %{buildroot}
-%{__python} setup.py install --skip-build --root %{buildroot}
+%{__python} setup.py install --root %{buildroot}
+rm -rf %{buildroot}/%{python_sitelib}/Dex-%{version}-py2.6.egg-info
 
 %clean
 rm -rf %{buildroot}
