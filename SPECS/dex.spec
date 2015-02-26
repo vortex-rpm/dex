@@ -1,6 +1,6 @@
 Name:           dex
 Version:        0.6.1
-Release:        1.vortex%{?dist}
+Release:        2.vortex%{?dist}
 Summary:        MongoDB performance tuning tool
 Group:          Applications/Databases
 License:        MIT
@@ -11,7 +11,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
 BuildRequires:  python-devel, python-setuptools, python-pymongo, python-dargparse, python-ordereddict
-Requires:       python-pymongo, python-dargparse, python-ordereddict
+Requires:       python-pymongo, python-dargparse, python-ordereddict, PyYAML
 
 %description
 Dex is a MongoDB performance tuning tool that compares queries to the available
@@ -36,5 +36,8 @@ rm -rf %{buildroot}
 %doc docs/SCHEMA.md docs/release-notes.md README.md LICENSE.txt
 
 %changelog
+* Wed Feb 26 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.6.1-2.vortex
+- Fix deps.
+
 * Wed Feb 25 2015 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.6.1-1.vortex
 - Initial packaging.
